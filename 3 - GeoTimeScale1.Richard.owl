@@ -1,0 +1,1906 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/pihouser/ontologies/2015/11/untitled-ontology-81"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/pihouser/ontologies/2015/11/untitled-ontology-81">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Authors: Perry Houser, Georgia Almodovar, Richard Samples, Miguel Leon, Dr. Villanueva</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="#URLreference"/>
+        <Literal datatypeIRI="&xsd;anyURI">https://github.com/pihouser/GeoField-TimeScale</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ontology for Field Notes 
+Follows Steno&apos;s Laws
+Customized for Cristro Rey, New Mexico</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="&xsd;decimal">1.2</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Alluvium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Buda"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cliff"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Colluvium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Del_Norte"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Del_Rio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Eon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Era"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Features"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Finlay"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Formations"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fort_Hancock"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fossils"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Geologic_Time_Scale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Geology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Landslide"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mancos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mesilla_Valley"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mojado"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Muleros"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Muleros_Andesite"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Observation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Period"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Place"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#River_Gravels"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Smeltertown"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stratagraphic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Supereon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Temporal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Units"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ledge"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#expectAbove"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#expectBelow"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEra"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFeature"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLocation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasName"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTimePeriod"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasUnits"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#imObserving"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAbove"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isBelow"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isThe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#mappedBy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDip"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasEndDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasRank"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasRockUnit"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasStartDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasStrike"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasThickness"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alluvium"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Archean"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Buda"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cerozoic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cliff"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cm_PH"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cm_RS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Colluvium"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cretaceous"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cristro_Rey"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Del_Norte"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Del_Rio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Eoarchean"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Finlay"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fort_Hancock"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ga"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hadean"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Highest"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kb_PH"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kd_PH"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kde_PH"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kf_PH"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Km_PH"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kme_PH"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kmo_PH"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kmu_PH"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ks_PH"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Landslide"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ledge"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lowest"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ma"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mancos"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mesilla_Valley"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mojado"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Muleros"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Muleros_Andesite"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Neogene"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nf_PH"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nl_PH"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Oldest"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Perry_Houser"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Phanerozoic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Precambrian"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Proterozoic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Qa_PH"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Qa_RS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Qc_PH"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Qr_PH"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Quaternary"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Richard_Samples"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#River_Gravel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Smeltertown"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Youngest"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#bivalve"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#URLreference"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Alluvium"/>
+        <Class IRI="#Features"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Buda"/>
+        <Class IRI="#Formations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cliff"/>
+        <Class IRI="#Features"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Colluvium"/>
+        <Class IRI="#Features"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Del_Norte"/>
+        <Class IRI="#Formations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Del_Rio"/>
+        <Class IRI="#Formations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Eon"/>
+        <Class IRI="#Supereon"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Era"/>
+        <Class IRI="#Eon"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Finlay"/>
+        <Class IRI="#Formations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Formations"/>
+        <Class IRI="#Geology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fort_Hancock"/>
+        <Class IRI="#Formations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fossils"/>
+        <Class IRI="#Features"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Landslide"/>
+        <Class IRI="#Features"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mancos"/>
+        <Class IRI="#Formations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mesilla_Valley"/>
+        <Class IRI="#Formations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mojado"/>
+        <Class IRI="#Formations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Muleros"/>
+        <Class IRI="#Formations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Muleros_Andesite"/>
+        <Class IRI="#Formations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Period"/>
+        <Class IRI="#Era"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Place"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#River_Gravels"/>
+        <Class IRI="#Features"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Smeltertown"/>
+        <Class IRI="#Formations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stratagraphic"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Supereon"/>
+        <Class IRI="#Geologic_Time_Scale"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Temporal"/>
+        <Class IRI="#Units"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ledge"/>
+        <Class IRI="#Features"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Alluvium"/>
+        <NamedIndividual IRI="#Alluvium"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Eon"/>
+        <NamedIndividual IRI="#Archean"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Buda"/>
+        <NamedIndividual IRI="#Buda"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Era"/>
+        <NamedIndividual IRI="#Cerozoic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cliff"/>
+        <NamedIndividual IRI="#Cliff"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Observation"/>
+        <NamedIndividual IRI="#Cm_PH"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Observation"/>
+        <NamedIndividual IRI="#Cm_RS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Colluvium"/>
+        <NamedIndividual IRI="#Colluvium"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Period"/>
+        <NamedIndividual IRI="#Cretaceous"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Location"/>
+        <NamedIndividual IRI="#Cristro_Rey"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Del_Norte"/>
+        <NamedIndividual IRI="#Del_Norte"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Del_Rio"/>
+        <NamedIndividual IRI="#Del_Rio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Era"/>
+        <NamedIndividual IRI="#Eoarchean"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Finlay"/>
+        <NamedIndividual IRI="#Finlay"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fort_Hancock"/>
+        <NamedIndividual IRI="#Fort_Hancock"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Temporal"/>
+        <NamedIndividual IRI="#Ga"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Eon"/>
+        <NamedIndividual IRI="#Hadean"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Stratagraphic"/>
+        <NamedIndividual IRI="#Highest"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Observation"/>
+        <NamedIndividual IRI="#Kb_PH"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Observation"/>
+        <NamedIndividual IRI="#Kd_PH"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Observation"/>
+        <NamedIndividual IRI="#Kde_PH"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Observation"/>
+        <NamedIndividual IRI="#Kf_PH"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Observation"/>
+        <NamedIndividual IRI="#Km_PH"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Observation"/>
+        <NamedIndividual IRI="#Kme_PH"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Observation"/>
+        <NamedIndividual IRI="#Kmo_PH"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Observation"/>
+        <NamedIndividual IRI="#Kmu_PH"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Observation"/>
+        <NamedIndividual IRI="#Ks_PH"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Landslide"/>
+        <NamedIndividual IRI="#Landslide"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ledge"/>
+        <NamedIndividual IRI="#Ledge"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Stratagraphic"/>
+        <NamedIndividual IRI="#Lowest"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Temporal"/>
+        <NamedIndividual IRI="#Ma"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mancos"/>
+        <NamedIndividual IRI="#Mancos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mesilla_Valley"/>
+        <NamedIndividual IRI="#Mesilla_Valley"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mojado"/>
+        <NamedIndividual IRI="#Mojado"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Muleros"/>
+        <NamedIndividual IRI="#Muleros"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Muleros_Andesite"/>
+        <NamedIndividual IRI="#Muleros_Andesite"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Period"/>
+        <NamedIndividual IRI="#Neogene"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Observation"/>
+        <NamedIndividual IRI="#Nf_PH"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Observation"/>
+        <NamedIndividual IRI="#Nl_PH"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Stratagraphic"/>
+        <NamedIndividual IRI="#Oldest"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#Perry_Houser"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Eon"/>
+        <NamedIndividual IRI="#Phanerozoic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Supereon"/>
+        <NamedIndividual IRI="#Precambrian"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Eon"/>
+        <NamedIndividual IRI="#Proterozoic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Observation"/>
+        <NamedIndividual IRI="#Qa_PH"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Observation"/>
+        <NamedIndividual IRI="#Qa_RS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Observation"/>
+        <NamedIndividual IRI="#Qc_PH"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Observation"/>
+        <NamedIndividual IRI="#Qr_PH"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Period"/>
+        <NamedIndividual IRI="#Quaternary"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#Richard_Samples"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#River_Gravels"/>
+        <NamedIndividual IRI="#River_Gravel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Smeltertown"/>
+        <NamedIndividual IRI="#Smeltertown"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Stratagraphic"/>
+        <NamedIndividual IRI="#Youngest"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fossils"/>
+        <NamedIndividual IRI="#bivalve"/>
+    </ClassAssertion>
+    <SameIndividual>
+        <NamedIndividual IRI="#Alluvium"/>
+        <NamedIndividual IRI="#Qa_PH"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#Buda"/>
+        <NamedIndividual IRI="#Kb_PH"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#Cm_PH"/>
+        <NamedIndividual IRI="#Muleros_Andesite"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#Cm_RS"/>
+        <NamedIndividual IRI="#Richard_Samples"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#Colluvium"/>
+        <NamedIndividual IRI="#Qc_PH"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#Del_Norte"/>
+        <NamedIndividual IRI="#Kde_PH"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#Del_Rio"/>
+        <NamedIndividual IRI="#Kd_PH"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#Finlay"/>
+        <NamedIndividual IRI="#Kf_PH"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#Fort_Hancock"/>
+        <NamedIndividual IRI="#Nf_PH"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#Km_PH"/>
+        <NamedIndividual IRI="#Mancos"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#Kme_PH"/>
+        <NamedIndividual IRI="#Mesilla_Valley"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#Kmo_PH"/>
+        <NamedIndividual IRI="#Mojado"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#Kmu_PH"/>
+        <NamedIndividual IRI="#Muleros"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#Ks_PH"/>
+        <NamedIndividual IRI="#Smeltertown"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#Landslide"/>
+        <NamedIndividual IRI="#Nl_PH"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#Lowest"/>
+        <NamedIndividual IRI="#Oldest"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#Qr_PH"/>
+        <NamedIndividual IRI="#River_Gravel"/>
+    </SameIndividual>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Cm_RS"/>
+        <NamedIndividual IRI="#Perry_Houser"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Perry_Houser"/>
+        <NamedIndividual IRI="#Richard_Samples"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Qa_PH"/>
+        <NamedIndividual IRI="#Qa_RS"/>
+    </DifferentIndividuals>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Alluvium"/>
+        <NamedIndividual IRI="#Alluvium"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#imObserving"/>
+        <NamedIndividual IRI="#Alluvium"/>
+        <NamedIndividual IRI="#Alluvium"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAbove"/>
+        <NamedIndividual IRI="#Alluvium"/>
+        <NamedIndividual IRI="#River_Gravel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isBelow"/>
+        <NamedIndividual IRI="#Alluvium"/>
+        <NamedIndividual IRI="#Colluvium"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&xsd;string">Millions of years</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#hasUnits"/>
+        <NamedIndividual IRI="#Archean"/>
+        <NamedIndividual IRI="#Ma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#imObserving"/>
+        <NamedIndividual IRI="#Buda"/>
+        <NamedIndividual IRI="#Buda"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAbove"/>
+        <NamedIndividual IRI="#Buda"/>
+        <NamedIndividual IRI="#Del_Rio"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isBelow"/>
+        <NamedIndividual IRI="#Buda"/>
+        <NamedIndividual IRI="#Mancos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasUnits"/>
+        <NamedIndividual IRI="#Cerozoic"/>
+        <NamedIndividual IRI="#Ma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEra"/>
+        <NamedIndividual IRI="#Cm_PH"/>
+        <NamedIndividual IRI="#Cerozoic"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLocation"/>
+        <NamedIndividual IRI="#Cm_PH"/>
+        <NamedIndividual IRI="#Cristro_Rey"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasUnits"/>
+        <NamedIndividual IRI="#Cm_PH"/>
+        <NamedIndividual IRI="#Ma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#mappedBy"/>
+        <NamedIndividual IRI="#Cm_PH"/>
+        <NamedIndividual IRI="#Perry_Houser"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLocation"/>
+        <NamedIndividual IRI="#Cm_RS"/>
+        <NamedIndividual IRI="#Cristro_Rey"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTimePeriod"/>
+        <NamedIndividual IRI="#Cm_RS"/>
+        <NamedIndividual IRI="#Cretaceous"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#mappedBy"/>
+        <NamedIndividual IRI="#Cm_RS"/>
+        <NamedIndividual IRI="#Richard_Samples"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#imObserving"/>
+        <NamedIndividual IRI="#Colluvium"/>
+        <NamedIndividual IRI="#Colluvium"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAbove"/>
+        <NamedIndividual IRI="#Colluvium"/>
+        <NamedIndividual IRI="#Alluvium"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isThe"/>
+        <NamedIndividual IRI="#Colluvium"/>
+        <NamedIndividual IRI="#Highest"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isThe"/>
+        <NamedIndividual IRI="#Colluvium"/>
+        <NamedIndividual IRI="#Youngest"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasUnits"/>
+        <NamedIndividual IRI="#Cretaceous"/>
+        <NamedIndividual IRI="#Ma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#imObserving"/>
+        <NamedIndividual IRI="#Del_Norte"/>
+        <NamedIndividual IRI="#Del_Norte"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAbove"/>
+        <NamedIndividual IRI="#Del_Norte"/>
+        <NamedIndividual IRI="#Finlay"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isBelow"/>
+        <NamedIndividual IRI="#Del_Norte"/>
+        <NamedIndividual IRI="#Smeltertown"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#imObserving"/>
+        <NamedIndividual IRI="#Del_Rio"/>
+        <NamedIndividual IRI="#Del_Rio"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAbove"/>
+        <NamedIndividual IRI="#Del_Rio"/>
+        <NamedIndividual IRI="#Mojado"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isBelow"/>
+        <NamedIndividual IRI="#Del_Rio"/>
+        <NamedIndividual IRI="#Buda"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasUnits"/>
+        <NamedIndividual IRI="#Eoarchean"/>
+        <NamedIndividual IRI="#Ma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFeature"/>
+        <NamedIndividual IRI="#Finlay"/>
+        <NamedIndividual IRI="#bivalve"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#imObserving"/>
+        <NamedIndividual IRI="#Finlay"/>
+        <NamedIndividual IRI="#Finlay"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isBelow"/>
+        <NamedIndividual IRI="#Finlay"/>
+        <NamedIndividual IRI="#Del_Norte"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isThe"/>
+        <NamedIndividual IRI="#Finlay"/>
+        <NamedIndividual IRI="#Lowest"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#imObserving"/>
+        <NamedIndividual IRI="#Fort_Hancock"/>
+        <NamedIndividual IRI="#Fort_Hancock"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAbove"/>
+        <NamedIndividual IRI="#Fort_Hancock"/>
+        <NamedIndividual IRI="#Muleros_Andesite"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isBelow"/>
+        <NamedIndividual IRI="#Fort_Hancock"/>
+        <NamedIndividual IRI="#Landslide"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasUnits"/>
+        <NamedIndividual IRI="#Hadean"/>
+        <NamedIndividual IRI="#Ga"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLocation"/>
+        <NamedIndividual IRI="#Kb_PH"/>
+        <NamedIndividual IRI="#Cristro_Rey"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTimePeriod"/>
+        <NamedIndividual IRI="#Kb_PH"/>
+        <NamedIndividual IRI="#Cretaceous"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#mappedBy"/>
+        <NamedIndividual IRI="#Kb_PH"/>
+        <NamedIndividual IRI="#Perry_Houser"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLocation"/>
+        <NamedIndividual IRI="#Kd_PH"/>
+        <NamedIndividual IRI="#Cristro_Rey"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTimePeriod"/>
+        <NamedIndividual IRI="#Kd_PH"/>
+        <NamedIndividual IRI="#Cretaceous"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasUnits"/>
+        <NamedIndividual IRI="#Kd_PH"/>
+        <NamedIndividual IRI="#Ma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#mappedBy"/>
+        <NamedIndividual IRI="#Kd_PH"/>
+        <NamedIndividual IRI="#Perry_Houser"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEra"/>
+        <NamedIndividual IRI="#Kde_PH"/>
+        <NamedIndividual IRI="#Cretaceous"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLocation"/>
+        <NamedIndividual IRI="#Kde_PH"/>
+        <NamedIndividual IRI="#Cristro_Rey"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasUnits"/>
+        <NamedIndividual IRI="#Kde_PH"/>
+        <NamedIndividual IRI="#Ma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#mappedBy"/>
+        <NamedIndividual IRI="#Kde_PH"/>
+        <NamedIndividual IRI="#Perry_Houser"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLocation"/>
+        <NamedIndividual IRI="#Kf_PH"/>
+        <NamedIndividual IRI="#Cristro_Rey"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTimePeriod"/>
+        <NamedIndividual IRI="#Kf_PH"/>
+        <NamedIndividual IRI="#Cretaceous"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasUnits"/>
+        <NamedIndividual IRI="#Kf_PH"/>
+        <NamedIndividual IRI="#Ma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#mappedBy"/>
+        <NamedIndividual IRI="#Kf_PH"/>
+        <NamedIndividual IRI="#Perry_Houser"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLocation"/>
+        <NamedIndividual IRI="#Km_PH"/>
+        <NamedIndividual IRI="#Cristro_Rey"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTimePeriod"/>
+        <NamedIndividual IRI="#Km_PH"/>
+        <NamedIndividual IRI="#Cretaceous"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasUnits"/>
+        <NamedIndividual IRI="#Km_PH"/>
+        <NamedIndividual IRI="#Ma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#mappedBy"/>
+        <NamedIndividual IRI="#Km_PH"/>
+        <NamedIndividual IRI="#Perry_Houser"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEra"/>
+        <NamedIndividual IRI="#Kme_PH"/>
+        <NamedIndividual IRI="#Cretaceous"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLocation"/>
+        <NamedIndividual IRI="#Kme_PH"/>
+        <NamedIndividual IRI="#Cristro_Rey"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasUnits"/>
+        <NamedIndividual IRI="#Kme_PH"/>
+        <NamedIndividual IRI="#Ma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#mappedBy"/>
+        <NamedIndividual IRI="#Kme_PH"/>
+        <NamedIndividual IRI="#Perry_Houser"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEra"/>
+        <NamedIndividual IRI="#Kmo_PH"/>
+        <NamedIndividual IRI="#Cretaceous"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLocation"/>
+        <NamedIndividual IRI="#Kmo_PH"/>
+        <NamedIndividual IRI="#Cristro_Rey"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasUnits"/>
+        <NamedIndividual IRI="#Kmo_PH"/>
+        <NamedIndividual IRI="#Ma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#mappedBy"/>
+        <NamedIndividual IRI="#Kmo_PH"/>
+        <NamedIndividual IRI="#Perry_Houser"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEra"/>
+        <NamedIndividual IRI="#Kmu_PH"/>
+        <NamedIndividual IRI="#Cretaceous"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLocation"/>
+        <NamedIndividual IRI="#Kmu_PH"/>
+        <NamedIndividual IRI="#Cristro_Rey"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasUnits"/>
+        <NamedIndividual IRI="#Kmu_PH"/>
+        <NamedIndividual IRI="#Ma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#mappedBy"/>
+        <NamedIndividual IRI="#Kmu_PH"/>
+        <NamedIndividual IRI="#Perry_Houser"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEra"/>
+        <NamedIndividual IRI="#Ks_PH"/>
+        <NamedIndividual IRI="#Cretaceous"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLocation"/>
+        <NamedIndividual IRI="#Ks_PH"/>
+        <NamedIndividual IRI="#Cristro_Rey"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasUnits"/>
+        <NamedIndividual IRI="#Ks_PH"/>
+        <NamedIndividual IRI="#Ma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#mappedBy"/>
+        <NamedIndividual IRI="#Ks_PH"/>
+        <NamedIndividual IRI="#Perry_Houser"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#imObserving"/>
+        <NamedIndividual IRI="#Landslide"/>
+        <NamedIndividual IRI="#Landslide"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAbove"/>
+        <NamedIndividual IRI="#Landslide"/>
+        <NamedIndividual IRI="#Fort_Hancock"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isBelow"/>
+        <NamedIndividual IRI="#Landslide"/>
+        <NamedIndividual IRI="#River_Gravel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#imObserving"/>
+        <NamedIndividual IRI="#Mancos"/>
+        <NamedIndividual IRI="#Mancos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAbove"/>
+        <NamedIndividual IRI="#Mancos"/>
+        <NamedIndividual IRI="#Buda"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isBelow"/>
+        <NamedIndividual IRI="#Mancos"/>
+        <NamedIndividual IRI="#Muleros_Andesite"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#imObserving"/>
+        <NamedIndividual IRI="#Mesilla_Valley"/>
+        <NamedIndividual IRI="#Mesilla_Valley"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isBelow"/>
+        <NamedIndividual IRI="#Mesilla_Valley"/>
+        <NamedIndividual IRI="#Mojado"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#imObserving"/>
+        <NamedIndividual IRI="#Mojado"/>
+        <NamedIndividual IRI="#Mojado"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAbove"/>
+        <NamedIndividual IRI="#Mojado"/>
+        <NamedIndividual IRI="#Mesilla_Valley"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isBelow"/>
+        <NamedIndividual IRI="#Mojado"/>
+        <NamedIndividual IRI="#Del_Rio"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#imObserving"/>
+        <NamedIndividual IRI="#Muleros"/>
+        <NamedIndividual IRI="#Muleros"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAbove"/>
+        <NamedIndividual IRI="#Muleros"/>
+        <NamedIndividual IRI="#Smeltertown"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isBelow"/>
+        <NamedIndividual IRI="#Muleros"/>
+        <NamedIndividual IRI="#Mesilla_Valley"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#imObserving"/>
+        <NamedIndividual IRI="#Muleros_Andesite"/>
+        <NamedIndividual IRI="#Muleros_Andesite"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAbove"/>
+        <NamedIndividual IRI="#Muleros_Andesite"/>
+        <NamedIndividual IRI="#Mancos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isBelow"/>
+        <NamedIndividual IRI="#Muleros_Andesite"/>
+        <NamedIndividual IRI="#Fort_Hancock"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEra"/>
+        <NamedIndividual IRI="#Neogene"/>
+        <NamedIndividual IRI="#Cerozoic"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLocation"/>
+        <NamedIndividual IRI="#Neogene"/>
+        <NamedIndividual IRI="#Cristro_Rey"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasUnits"/>
+        <NamedIndividual IRI="#Neogene"/>
+        <NamedIndividual IRI="#Ma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLocation"/>
+        <NamedIndividual IRI="#Nf_PH"/>
+        <NamedIndividual IRI="#Cristro_Rey"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTimePeriod"/>
+        <NamedIndividual IRI="#Nf_PH"/>
+        <NamedIndividual IRI="#Neogene"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasUnits"/>
+        <NamedIndividual IRI="#Nf_PH"/>
+        <NamedIndividual IRI="#Ma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#mappedBy"/>
+        <NamedIndividual IRI="#Nf_PH"/>
+        <NamedIndividual IRI="#Perry_Houser"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLocation"/>
+        <NamedIndividual IRI="#Nl_PH"/>
+        <NamedIndividual IRI="#Cristro_Rey"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTimePeriod"/>
+        <NamedIndividual IRI="#Nl_PH"/>
+        <NamedIndividual IRI="#Neogene"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasUnits"/>
+        <NamedIndividual IRI="#Nl_PH"/>
+        <NamedIndividual IRI="#Ma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#mappedBy"/>
+        <NamedIndividual IRI="#Nl_PH"/>
+        <NamedIndividual IRI="#Perry_Houser"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasUnits"/>
+        <NamedIndividual IRI="#Phanerozoic"/>
+        <NamedIndividual IRI="#Ma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&xsd;string">Billions of years</Literal>
+        </Annotation>
+        <ObjectProperty IRI="#hasUnits"/>
+        <NamedIndividual IRI="#Precambrian"/>
+        <NamedIndividual IRI="#Ga"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasUnits"/>
+        <NamedIndividual IRI="#Proterozoic"/>
+        <NamedIndividual IRI="#Ma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLocation"/>
+        <NamedIndividual IRI="#Qa_PH"/>
+        <NamedIndividual IRI="#Cristro_Rey"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTimePeriod"/>
+        <NamedIndividual IRI="#Qa_PH"/>
+        <NamedIndividual IRI="#Quaternary"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasUnits"/>
+        <NamedIndividual IRI="#Qa_PH"/>
+        <NamedIndividual IRI="#Ma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#mappedBy"/>
+        <NamedIndividual IRI="#Qa_PH"/>
+        <NamedIndividual IRI="#Perry_Houser"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEra"/>
+        <NamedIndividual IRI="#Qa_RS"/>
+        <NamedIndividual IRI="#Cerozoic"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFeature"/>
+        <NamedIndividual IRI="#Qa_RS"/>
+        <NamedIndividual IRI="#Colluvium"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLocation"/>
+        <NamedIndividual IRI="#Qa_RS"/>
+        <NamedIndividual IRI="#Cristro_Rey"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTimePeriod"/>
+        <NamedIndividual IRI="#Qa_RS"/>
+        <NamedIndividual IRI="#Quaternary"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#mappedBy"/>
+        <NamedIndividual IRI="#Qa_RS"/>
+        <NamedIndividual IRI="#Richard_Samples"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEra"/>
+        <NamedIndividual IRI="#Qc_PH"/>
+        <NamedIndividual IRI="#Cerozoic"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLocation"/>
+        <NamedIndividual IRI="#Qc_PH"/>
+        <NamedIndividual IRI="#Cristro_Rey"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTimePeriod"/>
+        <NamedIndividual IRI="#Qc_PH"/>
+        <NamedIndividual IRI="#Quaternary"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasUnits"/>
+        <NamedIndividual IRI="#Qc_PH"/>
+        <NamedIndividual IRI="#Ma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#mappedBy"/>
+        <NamedIndividual IRI="#Qc_PH"/>
+        <NamedIndividual IRI="#Perry_Houser"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEra"/>
+        <NamedIndividual IRI="#Qr_PH"/>
+        <NamedIndividual IRI="#Cerozoic"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLocation"/>
+        <NamedIndividual IRI="#Qr_PH"/>
+        <NamedIndividual IRI="#Cristro_Rey"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTimePeriod"/>
+        <NamedIndividual IRI="#Qr_PH"/>
+        <NamedIndividual IRI="#Quaternary"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasUnits"/>
+        <NamedIndividual IRI="#Qr_PH"/>
+        <NamedIndividual IRI="#Ma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#mappedBy"/>
+        <NamedIndividual IRI="#Qr_PH"/>
+        <NamedIndividual IRI="#Perry_Houser"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEra"/>
+        <NamedIndividual IRI="#Quaternary"/>
+        <NamedIndividual IRI="#Cerozoic"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasUnits"/>
+        <NamedIndividual IRI="#Quaternary"/>
+        <NamedIndividual IRI="#Ma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#imObserving"/>
+        <NamedIndividual IRI="#River_Gravel"/>
+        <NamedIndividual IRI="#River_Gravel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAbove"/>
+        <NamedIndividual IRI="#River_Gravel"/>
+        <NamedIndividual IRI="#Landslide"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isBelow"/>
+        <NamedIndividual IRI="#River_Gravel"/>
+        <NamedIndividual IRI="#Alluvium"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#imObserving"/>
+        <NamedIndividual IRI="#Smeltertown"/>
+        <NamedIndividual IRI="#Smeltertown"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAbove"/>
+        <NamedIndividual IRI="#Smeltertown"/>
+        <NamedIndividual IRI="#Del_Norte"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isBelow"/>
+        <NamedIndividual IRI="#Smeltertown"/>
+        <NamedIndividual IRI="#Muleros"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRank"/>
+        <NamedIndividual IRI="#Alluvium"/>
+        <Literal datatypeIRI="&xsd;int">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStartDate"/>
+        <NamedIndividual IRI="#Alluvium"/>
+        <Literal datatypeIRI="&xsd;integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEndDate"/>
+        <NamedIndividual IRI="#Archean"/>
+        <Literal datatypeIRI="&xsd;int">2500000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStartDate"/>
+        <NamedIndividual IRI="#Archean"/>
+        <Literal datatypeIRI="&xsd;int">4000000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRank"/>
+        <NamedIndividual IRI="#Buda"/>
+        <Literal datatypeIRI="&xsd;integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEndDate"/>
+        <NamedIndividual IRI="#Cerozoic"/>
+        <Literal datatypeIRI="&xsd;int">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStartDate"/>
+        <NamedIndividual IRI="#Cerozoic"/>
+        <Literal datatypeIRI="&xsd;int">66000000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDip"/>
+        <NamedIndividual IRI="#Cm_PH"/>
+        <Literal datatypeIRI="&xsd;integer">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRank"/>
+        <NamedIndividual IRI="#Cm_PH"/>
+        <Literal datatypeIRI="&xsd;int">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStrike"/>
+        <NamedIndividual IRI="#Cm_PH"/>
+        <Literal datatypeIRI="&xsd;integer">232</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDip"/>
+        <NamedIndividual IRI="#Cm_RS"/>
+        <Literal datatypeIRI="&xsd;integer">21</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStrike"/>
+        <NamedIndividual IRI="#Cm_RS"/>
+        <Literal datatypeIRI="&xsd;integer">231</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRank"/>
+        <NamedIndividual IRI="#Colluvium"/>
+        <Literal datatypeIRI="&xsd;integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStartDate"/>
+        <NamedIndividual IRI="#Colluvium"/>
+        <Literal datatypeIRI="&xsd;integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEndDate"/>
+        <NamedIndividual IRI="#Cretaceous"/>
+        <Literal datatypeIRI="&xsd;int">66000000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStartDate"/>
+        <NamedIndividual IRI="#Cretaceous"/>
+        <Literal datatypeIRI="&xsd;int">145000000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRank"/>
+        <NamedIndividual IRI="#Del_Norte"/>
+        <Literal datatypeIRI="&xsd;integer">14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRank"/>
+        <NamedIndividual IRI="#Del_Rio"/>
+        <Literal datatypeIRI="&xsd;integer">9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEndDate"/>
+        <NamedIndividual IRI="#Eoarchean"/>
+        <Literal datatypeIRI="&xsd;int">3600000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStartDate"/>
+        <NamedIndividual IRI="#Eoarchean"/>
+        <Literal datatypeIRI="&xsd;int">4000000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRank"/>
+        <NamedIndividual IRI="#Finlay"/>
+        <Literal datatypeIRI="&xsd;integer">15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRank"/>
+        <NamedIndividual IRI="#Fort_Hancock"/>
+        <Literal datatypeIRI="&xsd;integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEndDate"/>
+        <NamedIndividual IRI="#Hadean"/>
+        <Literal datatypeIRI="&xsd;float">4.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEndDate"/>
+        <NamedIndividual IRI="#Hadean"/>
+        <Literal datatypeIRI="&xsd;float">4.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDip"/>
+        <NamedIndividual IRI="#Kb_PH"/>
+        <Literal datatypeIRI="&xsd;integer">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRank"/>
+        <NamedIndividual IRI="#Kb_PH"/>
+        <Literal datatypeIRI="&xsd;int">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStrike"/>
+        <NamedIndividual IRI="#Kb_PH"/>
+        <Literal datatypeIRI="&xsd;integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDip"/>
+        <NamedIndividual IRI="#Kd_PH"/>
+        <Literal datatypeIRI="&xsd;integer">32</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRank"/>
+        <NamedIndividual IRI="#Kd_PH"/>
+        <Literal datatypeIRI="&xsd;int">9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStrike"/>
+        <NamedIndividual IRI="#Kd_PH"/>
+        <Literal datatypeIRI="&xsd;integer">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDip"/>
+        <NamedIndividual IRI="#Kde_PH"/>
+        <Literal datatypeIRI="&xsd;integer">21</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRank"/>
+        <NamedIndividual IRI="#Kde_PH"/>
+        <Literal datatypeIRI="&xsd;int">14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStrike"/>
+        <NamedIndividual IRI="#Kde_PH"/>
+        <Literal datatypeIRI="&xsd;integer">178</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasThickness"/>
+        <NamedIndividual IRI="#Kde_PH"/>
+        <Literal datatypeIRI="&xsd;integer">41</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDip"/>
+        <NamedIndividual IRI="#Kf_PH"/>
+        <Literal datatypeIRI="&xsd;integer">15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRank"/>
+        <NamedIndividual IRI="#Kf_PH"/>
+        <Literal datatypeIRI="&xsd;int">15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStrike"/>
+        <NamedIndividual IRI="#Kf_PH"/>
+        <Literal datatypeIRI="&xsd;integer">45</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasThickness"/>
+        <NamedIndividual IRI="#Kf_PH"/>
+        <Literal datatypeIRI="&xsd;integer">41</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDip"/>
+        <NamedIndividual IRI="#Km_PH"/>
+        <Literal datatypeIRI="&xsd;integer">25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRank"/>
+        <NamedIndividual IRI="#Km_PH"/>
+        <Literal datatypeIRI="&xsd;int">7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStrike"/>
+        <NamedIndividual IRI="#Km_PH"/>
+        <Literal datatypeIRI="&xsd;integer">91</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDip"/>
+        <NamedIndividual IRI="#Kme_PH"/>
+        <Literal datatypeIRI="&xsd;integer">15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRank"/>
+        <NamedIndividual IRI="#Kme_PH"/>
+        <Literal datatypeIRI="&xsd;int">11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStrike"/>
+        <NamedIndividual IRI="#Kme_PH"/>
+        <Literal datatypeIRI="&xsd;integer">35</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDip"/>
+        <NamedIndividual IRI="#Kmo_PH"/>
+        <Literal datatypeIRI="&xsd;integer">35</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRank"/>
+        <NamedIndividual IRI="#Kmo_PH"/>
+        <Literal datatypeIRI="&xsd;int">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStrike"/>
+        <NamedIndividual IRI="#Kmo_PH"/>
+        <Literal datatypeIRI="&xsd;integer">125</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDip"/>
+        <NamedIndividual IRI="#Kmu_PH"/>
+        <Literal datatypeIRI="&xsd;integer">91</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRank"/>
+        <NamedIndividual IRI="#Kmu_PH"/>
+        <Literal datatypeIRI="&xsd;int">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStrike"/>
+        <NamedIndividual IRI="#Kmu_PH"/>
+        <Literal datatypeIRI="&xsd;integer">130</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDip"/>
+        <NamedIndividual IRI="#Ks_PH"/>
+        <Literal datatypeIRI="&xsd;integer">125</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRank"/>
+        <NamedIndividual IRI="#Ks_PH"/>
+        <Literal datatypeIRI="&xsd;int">13</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStrike"/>
+        <NamedIndividual IRI="#Ks_PH"/>
+        <Literal datatypeIRI="&xsd;integer">180</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRank"/>
+        <NamedIndividual IRI="#Landslide"/>
+        <Literal datatypeIRI="&xsd;integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRank"/>
+        <NamedIndividual IRI="#Mancos"/>
+        <Literal datatypeIRI="&xsd;integer">7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRank"/>
+        <NamedIndividual IRI="#Mesilla_Valley"/>
+        <Literal datatypeIRI="&xsd;integer">11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRank"/>
+        <NamedIndividual IRI="#Mojado"/>
+        <Literal datatypeIRI="&xsd;integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRank"/>
+        <NamedIndividual IRI="#Muleros"/>
+        <Literal datatypeIRI="&xsd;integer">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRank"/>
+        <NamedIndividual IRI="#Muleros_Andesite"/>
+        <Literal datatypeIRI="&xsd;integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEndDate"/>
+        <NamedIndividual IRI="#Neogene"/>
+        <Literal datatypeIRI="&xsd;int">2580000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStartDate"/>
+        <NamedIndividual IRI="#Neogene"/>
+        <Literal datatypeIRI="&xsd;int">2303000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDip"/>
+        <NamedIndividual IRI="#Nf_PH"/>
+        <Literal datatypeIRI="&xsd;integer">175</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRank"/>
+        <NamedIndividual IRI="#Nf_PH"/>
+        <Literal datatypeIRI="&xsd;int">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStrike"/>
+        <NamedIndividual IRI="#Nf_PH"/>
+        <Literal datatypeIRI="&xsd;integer">125</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRank"/>
+        <NamedIndividual IRI="#Nl_PH"/>
+        <Literal datatypeIRI="&xsd;int">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEndDate"/>
+        <NamedIndividual IRI="#Phanerozoic"/>
+        <Literal datatypeIRI="&xsd;float">0.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStartDate"/>
+        <NamedIndividual IRI="#Phanerozoic"/>
+        <Literal datatypeIRI="&xsd;float">541.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEndDate"/>
+        <NamedIndividual IRI="#Precambrian"/>
+        <Literal datatypeIRI="&xsd;float">4.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStartDate"/>
+        <NamedIndividual IRI="#Precambrian"/>
+        <Literal datatypeIRI="&xsd;int">541</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEndDate"/>
+        <NamedIndividual IRI="#Proterozoic"/>
+        <Literal datatypeIRI="&xsd;float">542.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStartDate"/>
+        <NamedIndividual IRI="#Proterozoic"/>
+        <Literal datatypeIRI="&xsd;int">2500000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRank"/>
+        <NamedIndividual IRI="#Qa_PH"/>
+        <Literal datatypeIRI="&xsd;int">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRank"/>
+        <NamedIndividual IRI="#Qa_RS"/>
+        <Literal datatypeIRI="&xsd;integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRank"/>
+        <NamedIndividual IRI="#Qc_PH"/>
+        <Literal datatypeIRI="&xsd;int">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStartDate"/>
+        <NamedIndividual IRI="#Qc_PH"/>
+        <Literal datatypeIRI="&xsd;integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRank"/>
+        <NamedIndividual IRI="#Qr_PH"/>
+        <Literal datatypeIRI="&xsd;int">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEndDate"/>
+        <NamedIndividual IRI="#Quaternary"/>
+        <Literal datatypeIRI="&xsd;int">2588000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStartDate"/>
+        <NamedIndividual IRI="#Quaternary"/>
+        <Literal datatypeIRI="&xsd;int">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRank"/>
+        <NamedIndividual IRI="#River_Gravel"/>
+        <Literal datatypeIRI="&xsd;integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRank"/>
+        <NamedIndividual IRI="#Smeltertown"/>
+        <Literal datatypeIRI="&xsd;integer">13</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isAbove"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isBelow"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="#imObserving"/>
+            <ObjectProperty IRI="#isAbove"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="#expectBelow"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="#imObserving"/>
+            <ObjectProperty IRI="#isBelow"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="#expectAbove"/>
+    </SubObjectPropertyOf>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Archean</IRI>
+        <Literal datatypeIRI="&xsd;string">4 mya to 2.5 mya</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Cerozoic</IRI>
+        <Literal datatypeIRI="&xsd;string">Millions of years to present</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Eoarchean</IRI>
+        <Literal datatypeIRI="&xsd;string">Millions of years</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Nf_PH</IRI>
+        <Literal datatypeIRI="&xsd;string">Fort Hancock Formation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Nl_PH</IRI>
+        <Literal datatypeIRI="&xsd;string">Landslide</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Phanerozoic</IRI>
+        <Literal datatypeIRI="&xsd;string">millions of year ago to present</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#URLreference"/>
+        <IRI>#Precambrian</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">https://en.wikipedia.org/wiki/Geologic_time_scale#Terminology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Precambrian</IRI>
+        <Literal datatypeIRI="&xsd;string">Billions of years ago</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Proterozoic</IRI>
+        <Literal datatypeIRI="&xsd;string">Millions of years</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Qa_PH</IRI>
+        <Literal datatypeIRI="&xsd;string">Alluvium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Qc_PH</IRI>
+        <Literal datatypeIRI="&xsd;string">Colluvium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Qr_PH</IRI>
+        <Literal datatypeIRI="&xsd;string">River Gravels</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+

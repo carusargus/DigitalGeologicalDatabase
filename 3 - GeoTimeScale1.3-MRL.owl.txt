@@ -1,0 +1,5 @@
+Notes: 
++ Added the simple Earthquake and populated it with five instances near to EP.
++ Added the ObjProp hasInterestLocation to relate earthquakes to the location of the project(s) for which we are using them. In this case, I mapped to Cristo_Rey
++ Corrected Cerozoic for Cenozoic. Cascaded to all elements which refered to it.
++ Populated the stratigraphic units with almost-true lat, long and altitude
